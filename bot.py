@@ -3,7 +3,7 @@
 # Edit captions of channel messages
 # Maybe useful for movie channels 
 
-from config import CAPTION
+from config import config
 from pyrogram import Client, filters
 
 #experiment #fail
