@@ -1,10 +1,14 @@
 # (C) Arunkumar Shibu 
 
 # Edit captions of channel messages
-# Maybe useful for movie channels 
+# Maybe useful for movie channels
+Import os
+from pyrogram import Client, filters 
 
-from config import config
-from pyrogram import Client, filters
+BOT_TOKEN = os.environ.get("BOT_TOKEN") 
+    API_ID = int(os.environ.get("API_ID"))
+    API_HASH = os.environ.get("API_HASH") 
+    CAPTION = os.environ.get("CAPTION")
 
 #experiment #fail
 async def get_size(size):
